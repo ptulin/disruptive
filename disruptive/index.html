@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Disruptive Experience - Leading UX/UI design and digital product strategy. We create exceptional user experiences through research, design, and validation.">
+    <meta name="keywords" content="UX design, UI design, user experience, digital product design, usability testing, design strategy">
+    <meta name="author" content="Disruptive Experience">
+    <meta property="og:title" content="Disruptive Experience - Customer Experience Design & Digital Product Planning">
+    <meta property="og:description" content="Discovery, Design & User Research for the next generation of fun and engaging digital products.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://disruptiveexperience.com/disruptive/">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Disruptive Experience - Customer Experience Design & Digital Product Planning</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" as="style">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Disruptive Experience",
+      "description": "Customer Experience Design & Digital Product Planning",
+      "url": "https://disruptiveexperience.com/disruptive/",
+      "telephone": "917-916-2988",
+      "email": "info@DisruptiveExperience.com",
+      "areaServed": "Worldwide",
+      "serviceType": ["UX Design", "UI Design", "User Research", "Digital Product Strategy"]
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">DISRUPTIVE<span class="plus">+</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#hero" class="logo" aria-label="Disruptive Experience Home">
+                    <span class="logo-text">DISRUPTIVE<span class="logo-plus">+</span></span>
+                    <span class="logo-subtitle">EXPERIENCE</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu" role="menubar">
+                    <li role="none"><a href="#process" class="nav-link" role="menuitem">PROCESS</a></li>
+                    <li role="none"><a href="#work" class="nav-link" role="menuitem">WORK</a></li>
+                    <li role="none"><a href="#team" class="nav-link" role="menuitem">TEAM</a></li>
+                    <li role="none"><a href="#manifesto" class="nav-link" role="menuitem">MANIFESTO</a></li>
+                    <li role="none"><a href="#contact" class="nav-link nav-cta" role="menuitem">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">We Transform Digital Experiences</div>
+                <h1 class="hero-title">
+                    <span class="title-line" data-aos="fade-up" data-aos-delay="100">DISRUPTIVE<span class="plus">+</span></span>
+                    <span class="title-line" data-aos="fade-up" data-aos-delay="200">EXPERIENCE</span>
+                </h1>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                    Discovery, Design & User Research for the next generation of fun and engaging digital products 
+                    and customer self-service applications. Fast. Smart. Experienced and Efficient.
+                </p>
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#contact" class="cta-button cta-primary">Get A Free Consultation</a>
+                    <a href="#work" class="cta-button cta-secondary">View Our Work</a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="100">0</div>
+                        <div class="stat-label">% Client Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process" aria-labelledby="process-title">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">Our Methodology</div>
+                <h2 id="process-title" class="section-title">
+                    STRATEGY <span class="title-separator">•</span> DESIGN <span class="title-separator">•</span> VALIDATE
+                </h2>
+                <p class="section-description">
+                    We disrupt the process with a user-centric design strategy that connects people to products 
+                    for validation on intuitive workflows and delightful experiences.
+                </p>
+                <p class="section-tagline">Sometimes it takes a disruption to make a meaningful experience.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L6 14V34L24 44L42 34V14L24 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24 24L16 20V28L24 32L32 28V20L24 24Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-number">01</div>
+                    <h3 class="card-title">Strategy</h3>
+                    <p class="card-description">Understand business objectives, goals and priorities for product development.</p>
+                    <ul class="card-list">
+                        <li>Competitive Landscape Audit</li>
+                        <li>Heuristic Evaluation</li>
+                        <li>Stakeholder Conversations</li>
+                        <li>Service Touch-points</li>
+                        <li>Project Road-map</li>
+                    </ul>
+                    <a href="#contact" class="card-link">Learn More →</a>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="8" width="32" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 20H32M16 24H28M16 28H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-number">02</div>
+                    <h3 class="card-title">Design</h3>
+                    <p class="card-description">Create an experience and interface that effectively communicates to your audience.</p>
+                    <ul class="card-list">
+                        <li>Persona Creation</li>
+                        <li>Work Flow Analysis</li>
+                        <li>Feature Requirements</li>
+                        <li>Storyboards and Wireframes</li>
+                        <li>Prototype Development</li>
+                    </ul>
+                    <a href="#contact" class="card-link">Learn More →</a>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L6 14V34L24 44L42 34V14L24 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 24L22 28L30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-number">03</div>
+                    <h3 class="card-title">Validate</h3>
+                    <p class="card-description">Confirm the design and strategy aligns with brand identity and service offering.</p>
+                    <ul class="card-list">
+                        <li>Creative Direction</li>
+                        <li>Usability Testing</li>
+                        <li>Data Analysis</li>
+                        <li>Feature Enhancement</li>
+                        <li>Rinse and Repeat</li>
+                    </ul>
+                    <a href="#contact" class="card-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work" aria-labelledby="work-title">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">Portfolio</div>
+                <h2 id="work-title" class="section-title">OUR WORK</h2>
+                <p class="section-description">
+                    A good user experience begins with a great client experience. We collaborate to solve digital 
+                    problems and create solutions that are sustainable, usable and enjoyable.
+                </p>
+            </div>
+
+            <div class="filter-tabs" role="tablist" aria-label="Filter work by category">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="workGrid">ALL</button>
+                <button class="filter-btn" data-filter="business" role="tab" aria-selected="false" aria-controls="workGrid">BUSINESS</button>
+                <button class="filter-btn" data-filter="consumer" role="tab" aria-selected="false" aria-controls="workGrid">CONSUMER</button>
+                <button class="filter-btn" data-filter="financial" role="tab" aria-selected="false" aria-controls="workGrid">FINANCIAL</button>
+                <button class="filter-btn" data-filter="internal" role="tab" aria-selected="false" aria-controls="workGrid">INTERNAL</button>
+            </div>
+
+            <div class="work-grid" id="workGrid" role="tabpanel">
+                <article class="work-item" data-category="internal" data-aos="fade-up" data-aos-delay="100">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Internal</span>
+                            <h3 class="work-item-title">Alert Management Dashboard</h3>
+                            <p class="work-item-excerpt">Real-time monitoring and alert system for enterprise operations</p>
+                            <button class="work-item-button" aria-label="View Alert Management Dashboard details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="business" data-aos="fade-up" data-aos-delay="150">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Business</span>
+                            <h3 class="work-item-title">Marketing Site</h3>
+                            <p class="work-item-excerpt">Modern marketing platform with conversion optimization</p>
+                            <button class="work-item-button" aria-label="View Marketing Site details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="business" data-aos="fade-up" data-aos-delay="200">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Business</span>
+                            <h3 class="work-item-title">E-Commerce for Small Business</h3>
+                            <p class="work-item-excerpt">Streamlined e-commerce solution for growing businesses</p>
+                            <button class="work-item-button" aria-label="View E-Commerce project details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="consumer" data-aos="fade-up" data-aos-delay="250">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1556740758-90de374c12ad?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Consumer</span>
+                            <h3 class="work-item-title">Shopping Cart: Usability Testing</h3>
+                            <p class="work-item-excerpt">Comprehensive UX research and optimization for checkout flow</p>
+                            <button class="work-item-button" aria-label="View Shopping Cart project details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="consumer" data-aos="fade-up" data-aos-delay="300">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Consumer</span>
+                            <h3 class="work-item-title">Hospital Ratings System</h3>
+                            <p class="work-item-excerpt">Patient-focused healthcare information platform</p>
+                            <button class="work-item-button" aria-label="View Hospital Ratings System details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="consumer" data-aos="fade-up" data-aos-delay="350">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Consumer</span>
+                            <h3 class="work-item-title">DVD Consumer Sales Product</h3>
+                            <p class="work-item-excerpt">E-commerce platform for media products</p>
+                            <button class="work-item-button" aria-label="View DVD Sales Product details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="business" data-aos="fade-up" data-aos-delay="400">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Business</span>
+                            <h3 class="work-item-title">Global Marketing Portal</h3>
+                            <p class="work-item-excerpt">Unified marketing platform for international campaigns</p>
+                            <button class="work-item-button" aria-label="View Global Marketing Portal details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="internal" data-aos="fade-up" data-aos-delay="450">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Internal</span>
+                            <h3 class="work-item-title">Mobile Expense Management Tool</h3>
+                            <p class="work-item-excerpt">Mobile-first expense tracking and reporting system</p>
+                            <button class="work-item-button" aria-label="View Mobile Expense Tool details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="consumer" data-aos="fade-up" data-aos-delay="500">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Consumer</span>
+                            <h3 class="work-item-title">Digital Curriculum for Premed Students</h3>
+                            <p class="work-item-excerpt">Interactive learning platform for medical education</p>
+                            <button class="work-item-button" aria-label="View Digital Curriculum details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="internal" data-aos="fade-up" data-aos-delay="550">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Internal</span>
+                            <h3 class="work-item-title">Self Service Application</h3>
+                            <p class="work-item-excerpt">Employee self-service portal with streamlined workflows</p>
+                            <button class="work-item-button" aria-label="View Self Service Application details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="consumer" data-aos="fade-up" data-aos-delay="600">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Consumer</span>
+                            <h3 class="work-item-title">Responsive Messaging Service</h3>
+                            <p class="work-item-excerpt">Cross-platform messaging with real-time synchronization</p>
+                            <button class="work-item-button" aria-label="View Messaging Service details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="business" data-aos="fade-up" data-aos-delay="650">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Business</span>
+                            <h3 class="work-item-title">Executive Retreat iPad Application</h3>
+                            <p class="work-item-excerpt">Custom iPad app for executive engagement and collaboration</p>
+                            <button class="work-item-button" aria-label="View iPad Application details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="business" data-aos="fade-up" data-aos-delay="700">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Business</span>
+                            <h3 class="work-item-title">Responsive Design Solution</h3>
+                            <p class="work-item-excerpt">Multi-device design system and implementation</p>
+                            <button class="work-item-button" aria-label="View Responsive Design Solution details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="internal" data-aos="fade-up" data-aos-delay="750">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Internal</span>
+                            <h3 class="work-item-title">Digital Backbone Distribution Service</h3>
+                            <p class="work-item-excerpt">Enterprise distribution and logistics platform</p>
+                            <button class="work-item-button" aria-label="View Distribution Service details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-item" data-category="financial" data-aos="fade-up" data-aos-delay="800">
+                    <div class="work-item-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop');" aria-hidden="true"></div>
+                    <div class="work-item-overlay">
+                        <div class="work-item-content">
+                            <span class="work-item-category">Financial</span>
+                            <h3 class="work-item-title">Fund Screener</h3>
+                            <p class="work-item-excerpt">Advanced financial data visualization and analysis tool</p>
+                            <button class="work-item-button" aria-label="View Fund Screener details">View Project →</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">Client Feedback</div>
+                <h2 id="testimonials-title" class="section-title">WHAT OUR CLIENTS SAY</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-quote">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 20C10 15 12 10 18 8L20 12C16 13 14 16 14 20H20V30H10V20Z" fill="currentColor" opacity="0.2"/>
+                            <path d="M30 20C30 15 32 10 38 8L40 12C36 13 34 16 34 20H40V30H30V20Z" fill="currentColor" opacity="0.2"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Disruptive Experience transformed our digital product strategy. Their user-centric approach and attention to detail resulted in a 40% increase in user engagement."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces');"></div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">John Smith</div>
+                            <div class="testimonial-role">CEO, TechCorp</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-quote">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 20C10 15 12 10 18 8L20 12C16 13 14 16 14 20H20V30H10V20Z" fill="currentColor" opacity="0.2"/>
+                            <path d="M30 20C30 15 32 10 38 8L40 12C36 13 34 16 34 20H40V30H30V20Z" fill="currentColor" opacity="0.2"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Working with Disruptive Experience was a game-changer. They understood our vision and delivered a solution that exceeded our expectations."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces');"></div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">Sarah Johnson</div>
+                            <div class="testimonial-role">Product Director, InnovateCo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-quote">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 20C10 15 12 10 18 8L20 12C16 13 14 16 14 20H20V30H10V20Z" fill="currentColor" opacity="0.2"/>
+                            <path d="M30 20C30 15 32 10 38 8L40 12C36 13 34 16 34 20H40V30H30V20Z" fill="currentColor" opacity="0.2"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Their expertise in UX research and design thinking helped us create a product that truly resonates with our users. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces');"></div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">Michael Chen</div>
+                            <div class="testimonial-role">Founder, StartupXYZ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team" aria-labelledby="team-title">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">Meet The Team</div>
+                <h2 id="team-title" class="section-title">TEAM DISRUPTIVE</h2>
+                <p class="section-description">
+                    Information Simplification & Design. We Create Digital Solutions to Communicate to Clients, 
+                    Customers, Employees and the Rest of the World.
+                </p>
+                <blockquote class="team-quote" data-aos="fade-up" data-aos-delay="100">
+                    <p>"It's more fun to be a pirate, than to join the navy."</p>
+                    <cite>— Steve Jobs</cite>
+                </blockquote>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" alt="Pawel Tulin" class="member-photo" loading="lazy">
+                        <div class="member-overlay">
+                            <a href="mailto:ptulin@disruptiveexperience.com" class="member-contact" aria-label="Email Pawel Tulin">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="member-name">Pawel Tulin</h3>
+                    <p class="member-role">Chief Disruptor</p>
+                    <p class="member-bio">Leading digital transformation with 15+ years of UX expertise</p>
+                </div>
+
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces" alt="Jenine Lurie" class="member-photo" loading="lazy">
+                        <div class="member-overlay">
+                            <a href="mailto:jenine@disruptiveexperience.com" class="member-contact" aria-label="Email Jenine Lurie">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="member-name">Jenine Lurie</h3>
+                    <p class="member-role">Disruptor-in-Chief</p>
+                    <p class="member-bio">Strategic design thinking and user research specialist</p>
+                </div>
+
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member-avatar">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop&crop=faces" alt="Moose" class="member-photo" loading="lazy">
+                        <div class="member-overlay">
+                            <a href="mailto:moose@disruptiveexperience.com" class="member-contact" aria-label="Email Moose">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="member-name">Moose</h3>
+                    <p class="member-role">Chief Mouse Officer</p>
+                    <p class="member-bio">Ensuring pixel-perfect precision and delightful interactions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section id="manifesto" class="manifesto" aria-labelledby="manifesto-title">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">Our Principles</div>
+                <h2 id="manifesto-title" class="section-title">MANIFESTO</h2>
+                <p class="section-description">
+                    Consulting insights to understand problems and creative skills to design solutions.
+                </p>
+            </div>
+
+            <div class="manifesto-grid">
+                <div class="manifesto-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="manifesto-icon-wrapper">
+                        <div class="manifesto-icon">🎯</div>
+                    </div>
+                    <h3 class="manifesto-title">Design Strategy</h3>
+                    <p class="manifesto-text">
+                        It begins in a conversation with stakeholders to set business goals and a project road-map. 
+                        We listen to your creative vision to storyboard and sketch ideas for feedback on initial 
+                        concepts for the design solution.
+                    </p>
+                    <span class="manifesto-tag">This is Good Planning.</span>
+                </div>
+
+                <div class="manifesto-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="manifesto-icon-wrapper">
+                        <div class="manifesto-icon">📱</div>
+                    </div>
+                    <h3 class="manifesto-title">Mobile First</h3>
+                    <p class="manifesto-text">
+                        Turn interactions into opportunities, all the time from any location - it is limitless possibility. 
+                        Test out core features rapidly, and then spend the effort on a larger platform.
+                    </p>
+                    <span class="manifesto-tag">This is Adaptation.</span>
+                </div>
+
+                <div class="manifesto-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="manifesto-icon-wrapper">
+                        <div class="manifesto-icon">✅</div>
+                    </div>
+                    <h3 class="manifesto-title">Usability Testing</h3>
+                    <p class="manifesto-text">
+                        Are users expectations met from your site or application or do they struggle with screen interactions? 
+                        Is your product on brand? We align customer perspective with real experience and use that feedback 
+                        as direction for change.
+                    </p>
+                    <span class="manifesto-tag">This is Validation.</span>
+                </div>
+
+                <div class="manifesto-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="manifesto-icon-wrapper">
+                        <div class="manifesto-icon">🌐</div>
+                    </div>
+                    <h3 class="manifesto-title">Social Currency</h3>
+                    <p class="manifesto-text">
+                        Social platforms are rapidly expanding internationally with new exchanges by the nano-second. 
+                        We execute a social media strategy to enhance the experience with expert knowledge and community buzz.
+                    </p>
+                    <span class="manifesto-tag">This is Community Innovation.</span>
+                </div>
+
+                <div class="manifesto-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="manifesto-icon-wrapper">
+                        <div class="manifesto-icon">🚀</div>
+                    </div>
+                    <h3 class="manifesto-title">MVP Prototype Development</h3>
+                    <p class="manifesto-text">
+                        Design a usable, minimum viable product, test the features and iterate on a prototype to validate 
+                        the experience before it goes into production. This is adaptable, flexible, nimble and cost efficient.
+                    </p>
+                    <span class="manifesto-tag">This is Disruptive.</span>
+                </div>
+
+                <div class="manifesto-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="manifesto-icon-wrapper">
+                        <div class="manifesto-icon">🎓</div>
+                    </div>
+                    <h3 class="manifesto-title">Training and Education</h3>
+                    <p class="manifesto-text">
+                        User Centric Design (UCD) training will maintain best practices and a standard of excellence. 
+                        It can be catered to your team in a workshop or over a retreat. Learn how to implement a UX 
+                        style guide for rapid design and a consistent brand experience.
+                    </p>
+                    <span class="manifesto-tag">This is UX Governance.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content" data-aos="fade-up">
+                    <div class="section-label">Get In Touch</div>
+                    <h2 id="contact-title" class="section-title">CONTACT</h2>
+                    <p class="contact-description">
+                        We are flexible to work client side with project stakeholders and to visit your users to see them in action.
+                    </p>
+                    <p class="contact-description">
+                        To get the conversation started, send us a link to your site or application for a free consultation. 
+                        Or to schedule a tour or training, please provide some information about the group and we will create 
+                        a unique experience that will be both engaging and fun.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="tel:9179162988" class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>917-916-2988</span>
+                        </a>
+                        <a href="mailto:info@DisruptiveExperience.com" class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>info@DisruptiveExperience.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate aria-labelledby="contact-title">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required aria-required="true" aria-invalid="false" autocomplete="name">
+                        <span class="form-error" id="name-error" role="alert"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required aria-required="true" aria-invalid="false" autocomplete="email">
+                        <span class="form-error" id="email-error" role="alert"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company (Optional)</label>
+                        <input type="text" id="company" name="company" autocomplete="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true" aria-invalid="false"></textarea>
+                        <span class="form-error" id="message-error" role="alert"></span>
+                    </div>
+                    <button type="submit" class="submit-button" aria-label="Send message">
+                        <span class="button-text">Send Message</span>
+                        <span class="button-loader" aria-hidden="true"></span>
+                    </button>
+                    <div class="form-success" id="formSuccess" role="alert" aria-live="polite"></div>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <p class="copyright">Copyright © 2026 DisruptiveExperience. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">DISRUPTIVE<span class="logo-plus">+</span></span>
+                        <span class="logo-subtitle">EXPERIENCE</span>
+                    </div>
+                    <p class="footer-tagline">Transforming digital experiences through design and research.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Services</h4>
+                        <ul>
+                            <li><a href="#process">Strategy</a></li>
+                            <li><a href="#process">Design</a></li>
+                            <li><a href="#process">Validation</a></li>
+                            <li><a href="#manifesto">Training</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul>
+                            <li><a href="#work">Our Work</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#manifesto">Manifesto</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
