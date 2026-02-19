@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disruptive Experience - Customer Experience Design & Digital Product Planning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">DISRUPTIVE<span class="logo-plus">+</span></span>
+                    <span class="logo-subtitle">EXPERIENCE</span>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#process" class="nav-link">PROCESS</a></li>
+                    <li><a href="#work" class="nav-link">WORK</a></li>
+                    <li><a href="#team" class="nav-link">TEAM</a></li>
+                    <li><a href="#manifesto" class="nav-link">MANIFESTO</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">DISRUPTIVE<span class="plus">+</span></span>
+                    <span class="title-line">EXPERIENCE</span>
+                </h1>
+                <p class="hero-description">
+                    Discovery, Design & User Research for the next generation of fun and engaging digital products 
+                    and customer self-service applications. Fast. Smart. Experienced and Efficient. 
+                    This is the DisruptiveExperience.
+                </p>
+                <a href="#contact" class="cta-button">Get A Free Consultation</a>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">STRATEGY <span class="title-separator">•</span> DESIGN <span class="title-separator">•</span> TEST</h2>
+                <p class="section-description">
+                    We disrupt the process with a user centric design strategy that connects people to products 
+                    for validation on intuitive workflows and delightful experiences. We have the consulting 
+                    insights to understand problems and creative skills to design solutions.
+                </p>
+                <p class="section-tagline">Sometimes it takes a disruption to make a meaningful experience.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="card-number">01</div>
+                    <h3 class="card-title">Strategy.</h3>
+                    <p class="card-description">Understand the business objectives, goals and priorities for product development.</p>
+                    <ul class="card-list">
+                        <li>Competitive Landscape Audit</li>
+                        <li>Heuristic Evaluation</li>
+                        <li>Stakeholder Conversations</li>
+                        <li>Service Touch-points</li>
+                        <li>Project Road-map</li>
+                    </ul>
+                </div>
+
+                <div class="process-card">
+                    <div class="card-number">02</div>
+                    <h3 class="card-title">Design.</h3>
+                    <p class="card-description">Create an experience and interface that effectively communicates to your audience.</p>
+                    <ul class="card-list">
+                        <li>Persona Creation</li>
+                        <li>Work Flow Analysis</li>
+                        <li>Feature Requirements</li>
+                        <li>Storyboards and Wireframes</li>
+                        <li>Prototype Development</li>
+                    </ul>
+                </div>
+
+                <div class="process-card">
+                    <div class="card-number">03</div>
+                    <h3 class="card-title">Validate.</h3>
+                    <p class="card-description">Confirm the design and strategy is aligned to brand identity and service offering. Get feedback.</p>
+                    <ul class="card-list">
+                        <li>Creative Direction</li>
+                        <li>Usability Testing</li>
+                        <li>Data Analysis</li>
+                        <li>Feature Enhancement</li>
+                        <li>Rinse and Repeat.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">OUR WORK</h2>
+                <p class="section-description">
+                    A good user experience begins with a great client experience. We collaborate to solve digital 
+                    problems and create solutions that are sustainable, usable and enjoyable.
+                </p>
+                <p class="section-note">* Complete case studies are available upon request, just ask!</p>
+            </div>
+
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="business">BUSINESS</button>
+                <button class="filter-btn" data-filter="consumer">CONSUMER</button>
+                <button class="filter-btn" data-filter="financial">FINANCIAL</button>
+                <button class="filter-btn" data-filter="internal">INTERNAL</button>
+            </div>
+
+            <div class="work-grid" id="workGrid">
+                <div class="work-item" data-category="internal">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">ALERT MANAGEMENT DASHBOARD</h3>
+                        <span class="work-item-category">Internal</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="business">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">MARKETING SITE</h3>
+                        <span class="work-item-category">Business</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="business">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">E-COMMERCE FOR SMALL BUSINESS</h3>
+                        <span class="work-item-category">Business</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="consumer">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">SHOPPING CART: USABILITY TESTING</h3>
+                        <span class="work-item-category">Consumer</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="consumer">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">HOSPITAL RATINGS SYSTEM</h3>
+                        <span class="work-item-category">Consumer</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="consumer">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">DVD CONSUMER SALES PRODUCT</h3>
+                        <span class="work-item-category">Consumer</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="business">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">GLOBAL MARKETING PORTAL</h3>
+                        <span class="work-item-category">Business</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="internal">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">MOBILE EXPENSE MANAGEMENT TOOL</h3>
+                        <span class="work-item-category">Internal</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="consumer">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">DIGITAL CURRICULUM FOR PREMED STUDENTS</h3>
+                        <span class="work-item-category">Consumer</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="internal">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">SELF SERVICE APPLICATION</h3>
+                        <span class="work-item-category">Internal</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="consumer">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">RESPONSIVE MESSAGING SERVICE</h3>
+                        <span class="work-item-category">Consumer</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="business">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">EXECUTIVE RETREAT iPAD APPLICATION</h3>
+                        <span class="work-item-category">Business</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="business">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">RESPONSIVE DESIGN SOLUTION</h3>
+                        <span class="work-item-category">Business</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="internal">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">DIGITAL BACKBONE DISTRIBUTION SERVICE</h3>
+                        <span class="work-item-category">Internal</span>
+                    </div>
+                </div>
+                <div class="work-item" data-category="financial">
+                    <div class="work-item-content">
+                        <h3 class="work-item-title">FUND SCREENER</h3>
+                        <span class="work-item-category">Financial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">TEAM DISRUPTIVE</h2>
+                <p class="section-description">
+                    Information Simplification & Design. We Create Digital Solutions to Communicate to Clients, 
+                    Customers, Employees and the Rest of the World. Our services and skills extend beyond the screen. 
+                    We are evangelists of the good word of great user experience design and will teach a workshop 
+                    over a lunch hour or more formally in a course curriculum on a corporate retreat.
+                </p>
+                <blockquote class="team-quote">
+                    "It's more fun to be a pirate, than to join the navy." <cite>— Steve Jobs</cite>
+                </blockquote>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">PT</div>
+                    </div>
+                    <h3 class="member-name">Pawel Tulin</h3>
+                    <p class="member-role">Chief Disruptor</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">JL</div>
+                    </div>
+                    <h3 class="member-name">Jenine Lurie</h3>
+                    <p class="member-role">Disruptor-in-Chief</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">M</div>
+                    </div>
+                    <h3 class="member-name">Moose</h3>
+                    <p class="member-role">Chief Mouse Officer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section id="manifesto" class="manifesto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">MANIFESTO</h2>
+                <p class="section-description">
+                    Consulting insights to understand problems and creative skills to design solutions.
+                </p>
+            </div>
+
+            <div class="manifesto-grid">
+                <div class="manifesto-item">
+                    <div class="manifesto-icon">🎯</div>
+                    <h3 class="manifesto-title">Design Strategy</h3>
+                    <p class="manifesto-text">
+                        It begins in a conversation with stakeholders to set business goals and a project road-map. 
+                        We listen to your creative vision to storyboard and sketch ideas for feedback on initial 
+                        concepts for the design solution.
+                    </p>
+                    <span class="manifesto-tag">This is Good Planning.</span>
+                </div>
+
+                <div class="manifesto-item">
+                    <div class="manifesto-icon">📱</div>
+                    <h3 class="manifesto-title">Mobile First</h3>
+                    <p class="manifesto-text">
+                        Turn interactions into opportunities, all the time from any location - it is limitless possibility. 
+                        Test out core features rapidly, and then spend the effort on a larger platform.
+                    </p>
+                    <span class="manifesto-tag">This is Adaptation.</span>
+                </div>
+
+                <div class="manifesto-item">
+                    <div class="manifesto-icon">✅</div>
+                    <h3 class="manifesto-title">Usability Testing</h3>
+                    <p class="manifesto-text">
+                        Are users expectations met from your site or application or do they struggle with screen interactions? 
+                        Is your product on brand? We align customer perspective with real experience and use that feedback 
+                        as direction for change.
+                    </p>
+                    <span class="manifesto-tag">This is Validation.</span>
+                </div>
+
+                <div class="manifesto-item">
+                    <div class="manifesto-icon">🌐</div>
+                    <h3 class="manifesto-title">Social Currency</h3>
+                    <p class="manifesto-text">
+                        Social platforms are rapidly expanding internationally with new exchanges by the nano-second. 
+                        We execute a social media strategy to enhance the experience with expert knowledge and community buzz.
+                    </p>
+                    <span class="manifesto-tag">This is Community Innovation.</span>
+                </div>
+
+                <div class="manifesto-item">
+                    <div class="manifesto-icon">🚀</div>
+                    <h3 class="manifesto-title">MVP Prototype Development</h3>
+                    <p class="manifesto-text">
+                        Design a usable, minimum viable product, test the features and iterate on a prototype to validate 
+                        the experience before it goes into production. This is adaptable, flexible, nimble and cost efficient.
+                    </p>
+                    <span class="manifesto-tag">This is Disruptive.</span>
+                </div>
+
+                <div class="manifesto-item">
+                    <div class="manifesto-icon">🎓</div>
+                    <h3 class="manifesto-title">Training and Education</h3>
+                    <p class="manifesto-text">
+                        User Centric Design (UCD) training will maintain best practices and a standard of excellence. 
+                        It can be catered to your team in a workshop or over a retreat. Learn how to implement a UX 
+                        style guide for rapid design and a consistent brand experience.
+                    </p>
+                    <span class="manifesto-tag">This is UX Governance.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <h2 class="section-title">CONTACT</h2>
+                    <p class="contact-description">
+                        We are flexible to work client side with project stakeholders and to visit your users to see them in action.
+                    </p>
+                    <p class="contact-description">
+                        To get the conversation started, send us a link to your site or application for a free consultation. 
+                        Or to schedule a tour or training, please provide some information about the group and we will create 
+                        a unique experience that will be both engaging and fun.
+                    </p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <p class="contact-details">
+                    <a href="tel:9179162988">917-916-2988</a> | 
+                    <a href="mailto:info@DisruptiveExperience.com">info@DisruptiveExperience.com</a>
+                </p>
+                <p class="copyright">Copyright © 2026 DisruptiveExperience</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
