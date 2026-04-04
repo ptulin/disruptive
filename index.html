@@ -3,295 +3,640 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Disruptive Experience — UX research, product strategy, and design that turns complexity into clarity. We help teams ship products people love.">
-    <meta name="keywords" content="UX design, product strategy, user research, design systems, digital products">
+    <meta name="description" content="Disruptive Experience helps teams shape AI strategy, product direction, and ventures with sharper judgment, stronger systems, and clearer momentum.">
+    <meta name="keywords" content="AI strategy, UX design, product strategy, disruptive experience, AI tools, archives, consulting">
     <meta name="author" content="Disruptive Experience">
-    <meta property="og:title" content="Disruptive Experience — Design & Product Strategy">
-    <meta property="og:description" content="Discovery, design, and validation for digital products. Fast. Smart. Human-centered.">
+    <meta property="og:title" content="Disruptive Experience | AI Strategy, Product Direction, and Ventures">
+    <meta property="og:description" content="AI strategy, product direction, and a growing ecosystem of tools, proof, and ventures.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://disruptiveexperience.com/disruptive/">
+    <meta property="og:url" content="https://disruptiveexperience.com">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Disruptive Experience — Design & Product Strategy</title>
+    <title>Disruptive Experience | AI Strategy, Product Direction, and Ventures</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f4ede1'/%3E%3Cpath d='M18 34h12V22h4v12h12v4H34v12h-4V38H18z' fill='%23cf5f3d'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once unregister identify alias set_config reset isFeatureEnabled onFeatureFlags onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_orTGlFWBoySyZQwPpabxramMzWSJmN5HQGTwkPhQRws', {
+            api_host: 'https://us.i.posthog.com',
+            person_profiles: 'identified_only',
+            autocapture: true,
+            capture_pageview: true,
+            capture_pageleave: true
+        });
+    </script>
+    <script>
+        window.si = window.si || function () {
+            (window.siq = window.siq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"ProfessionalService","name":"Disruptive Experience","description":"UX research, product strategy, and design","url":"https://disruptiveexperience.com/disruptive/","telephone":"917-916-2988","email":"info@DisruptiveExperience.com","areaServed":"Worldwide"}
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Disruptive Experience",
+      "url": "https://disruptiveexperience.com",
+      "email": "contact@disruptiveexperience.com",
+      "description": "AI strategy, product direction, research, and digital ventures.",
+      "areaServed": "Worldwide",
+      "serviceType": [
+        "AI Strategy",
+        "UX Research",
+        "Product Strategy",
+        "Service Design",
+        "Design Systems"
+      ]
+    }
     </script>
 </head>
 <body>
-    <div class="noise" aria-hidden="true"></div>
-    <div class="gradient-orb gradient-orb-1" aria-hidden="true"></div>
-    <div class="gradient-orb gradient-orb-2" aria-hidden="true"></div>
-    <div class="gradient-orb gradient-orb-3" aria-hidden="true"></div>
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="container site-header__inner">
+                <a href="#top" class="brand-mark" aria-label="Disruptive Experience home" data-analytics-name="Brand">
+                    <span class="brand-mark__name">Disruptive<span>+</span></span>
+                    <span class="brand-mark__sub">Experience</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteMenu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="site-nav" id="siteMenu" aria-label="Main">
+                    <a href="#capabilities" data-analytics-name="Capabilities">Capabilities</a>
+                    <a href="#destinations" data-analytics-name="Destinations">Destinations</a>
+                    <a href="#ventures" data-analytics-name="Ventures">Ventures</a>
+                    <a href="#manifesto" data-analytics-name="Life After AI">Life After AI</a>
+                    <a href="#contact" class="nav-cta" data-analytics-name="Start here">Start here</a>
+                </nav>
+            </div>
+        </header>
 
-    <header class="header" id="header">
-        <div class="header-inner">
-            <a href="#" class="logo" aria-label="Disruptive Experience">
-                <span class="logo-main">Disruptive</span><span class="logo-plus">+</span>
-                <span class="logo-sub">Experience</span>
-            </a>
-            <nav class="nav" aria-label="Main">
-                <a href="#work">Work</a>
-                <a href="#approach">Approach</a>
-                <a href="#about">About</a>
-                <a href="#contact" class="nav-cta">Start a project</a>
-            </nav>
-            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-        <div class="mobile-nav" id="mobileNav">
-            <a href="#work">Work</a>
-            <a href="#approach">Approach</a>
-            <a href="#about">About</a>
-            <a href="#contact">Start a project</a>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero" id="hero">
-            <div class="hero-inner">
-                <p class="hero-label reveal">Design & product strategy</p>
-                <h1 class="hero-title reveal">
-                    We turn complexity into <span class="gradient-text">clarity</span>.
-                </h1>
-                <p class="hero-desc reveal">
-                    Discovery, design, and validation for digital products and self-service experiences. We help teams ship products people actually love.
-                </p>
-                <div class="hero-actions reveal">
-                    <a href="#contact" class="btn btn-primary">Get a free consultation</a>
-                    <a href="#work" class="btn btn-ghost">See our work</a>
-                </div>
-                <div class="hero-marquee" aria-hidden="true">
-                    <div class="marquee-track">
-                        <span>Strategy</span><span>·</span><span>Design</span><span>·</span><span>Research</span><span>·</span><span>Validation</span><span>·</span>
-                        <span>Strategy</span><span>·</span><span>Design</span><span>·</span><span>Research</span><span>·</span><span>Validation</span><span>·</span>
+        <main id="top">
+            <section class="hero">
+                <div class="container hero__grid">
+                    <div class="hero__content" data-reveal="up">
+                        <div class="hero__main">
+                            <p class="eyebrow">AI strategy / service design / product direction / venture building</p>
+                            <h1>AI strategy, product direction, and ventures built to earn trust.</h1>
+                            <p class="hero__lede">
+                                Disruptive Experience is Pawel Tulin's practice across AI strategy, UX and service design,
+                                product direction, and founder-led ventures. The work helps teams decide where AI fits,
+                                clarify complex systems, and turn promising ideas into offers people can understand and trust.
+                            </p>
+                            <div class="hero__actions">
+                                <a href="#contact" class="button button--primary" data-analytics-name="Start a project">Start a project</a>
+                                <a href="#destinations" class="button button--ghost" data-analytics-name="Explore the ecosystem">Explore the ecosystem</a>
+                            </div>
+                        </div>
+                        <div class="hero__signals">
+                            <article class="signal-card">
+                                <span class="signal-card__value">200+ interviews</span>
+                                <span class="signal-card__label">Research synthesized for IBM cognitive UX standards and complex product decisions.</span>
+                            </article>
+                            <article class="signal-card">
+                                <span class="signal-card__value">80-90% automation</span>
+                                <span class="signal-card__label">Customer support flows automated at ADP through multilingual AI service design.</span>
+                            </article>
+                            <article class="signal-card">
+                                <span class="signal-card__value">30+ product lines</span>
+                                <span class="signal-card__label">Design system and workflow alignment work shaped for large Fiserv portfolios.</span>
+                            </article>
+                            <article class="signal-card">
+                                <span class="signal-card__value">150+ countries</span>
+                                <span class="signal-card__label">Global reporting and decision systems built for UNICEF-scale complexity.</span>
+                            </article>
+                        </div>
+                        <article class="hero-feature-tool" data-reveal="up">
+                            <div class="hero-feature-tool__intro">
+                                <p class="hero-feature-tool__eyebrow">Featured AI tool today</p>
+                                <h2>One live build from the AutoAIForge tools stream.</h2>
+                                <p>Fresh experiments ship daily. This slot rotates automatically and gives visitors a concrete thing to open, inspect, fork, and share instead of landing on another empty promise card.</p>
+                                <div class="hero-feature-tool__share">
+                                    <a class="button button--ghost button--small" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdisruptiveexperience.com" target="_blank" rel="noreferrer" data-analytics-name="Share on LinkedIn">Share on LinkedIn</a>
+                                    <a class="button button--ghost button--small" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdisruptiveexperience.com&text=Disruptive%20Experience%20-%20AI%20strategy%2C%20ventures%2C%20and%20live%20tools." target="_blank" rel="noreferrer" data-analytics-name="Share on X">Share on X</a>
+                                    <button class="button button--ghost button--small" type="button" id="copySiteLink" data-analytics-name="Copy site link">Copy site link</button>
+                                </div>
+                            </div>
+                            <article class="hero-feature-tool__card" id="featuredToolCard">
+                                <span class="hero-feature-tool__meta" id="featuredToolMeta">Loading from AutoAIForge</span>
+                                <strong id="featuredToolName">Featured tool</strong>
+                                <span class="hero-feature-tool__desc" id="featuredToolDescription">Pulling the latest public tools index and picking a new tool for today.</span>
+                                <div class="hero-feature-tool__details">
+                                    <div class="hero-feature-tool__stat">
+                                        <span class="hero-feature-tool__stat-label">Rotation</span>
+                                        <strong id="featuredToolRotation">Updates daily from the tools feed</strong>
+                                    </div>
+                                    <div class="hero-feature-tool__stat">
+                                        <span class="hero-feature-tool__stat-label">GitHub</span>
+                                        <strong id="featuredToolGithubLabel">Repository path loading</strong>
+                                    </div>
+                                </div>
+                                <div class="hero-feature-tool__actions">
+                                    <a
+                                        class="button button--primary button--small"
+                                        id="featuredToolLink"
+                                        href="https://aitools.disruptiveexperience.com"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        data-analytics-name="Featured AI Tool"
+                                    >Open tool page</a>
+                                    <a
+                                        class="button button--ghost button--small"
+                                        id="featuredToolGithub"
+                                        href="https://github.com/ptulin/autoaiforge"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        data-analytics-name="Featured tool GitHub"
+                                    >Open on GitHub</a>
+                                    <a
+                                        class="button button--ghost button--small"
+                                        href="https://aitools.disruptiveexperience.com"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        data-analytics-name="Browse AI tools"
+                                    >Browse all AI tools</a>
+                                </div>
+                            </article>
+                        </article>
                     </div>
-                </div>
-            </div>
-            <div class="scroll-hint reveal">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
-            </div>
-        </section>
 
-        <section class="bento" id="approach">
-            <div class="wrap">
-                <p class="section-label reveal">How we work</p>
-                <h2 class="section-title reveal">Strategy → Design → Validate</h2>
-                <p class="section-desc reveal">User-centric process that connects people to products. We bring consulting rigor and creative craft.</p>
-                <div class="bento-grid">
-                    <article class="bento-card bento-card-lg reveal glass" style="--delay: 0">
-                        <div class="bento-num">01</div>
-                        <h3>Strategy</h3>
-                        <p>Business goals, competitive landscape, and a clear roadmap. We align stakeholders before a single pixel is drawn.</p>
-                        <ul>
-                            <li>Competitive audit</li>
-                            <li>Heuristic evaluation</li>
-                            <li>Stakeholder workshops</li>
-                            <li>Service touchpoints</li>
-                        </ul>
-                    </article>
-                    <article class="bento-card reveal glass" style="--delay: 1">
-                        <div class="bento-num">02</div>
-                        <h3>Design</h3>
-                        <p>Personas, flows, wireframes, and prototypes. Interfaces that communicate clearly and feel right.</p>
-                        <ul>
-                            <li>Personas & flows</li>
-                            <li>Wireframes</li>
-                            <li>Prototypes</li>
-                        </ul>
-                    </article>
-                    <article class="bento-card reveal glass" style="--delay: 2">
-                        <div class="bento-num">03</div>
-                        <h3>Validate</h3>
-                        <p>Usability testing and feedback loops. We confirm the experience matches the strategy before scale.</p>
-                        <ul>
-                            <li>Usability testing</li>
-                            <li>Data & feedback</li>
-                            <li>Iteration</li>
-                        </ul>
-                    </article>
+                    <aside class="hero__visual" data-reveal="up">
+                        <article class="hero-media hero-media--lead">
+                            <div class="hero-media__overlay">
+                                <p class="hero-media__label">Featured venture</p>
+                                <h2>Taste of Gascony</h2>
+                                <p>Founder-led food, wine, and slow-travel experiences shaped through real local relationships in the Gers.</p>
+                            </div>
+                        </article>
+                        <article class="hero-proof-card">
+                                <p class="hero-proof-card__label">Trusted by teams at</p>
+                                <ul class="hero-proof-list">
+                                    <li>
+                                        <strong>IBM, ADP, Fiserv, Pearson, UNICEF</strong>
+                                        <span>Enterprise systems, service design, AI workflows, education platforms, and decision support at scale.</span>
+                                    </li>
+                                    <li>
+                                        <strong>Evidence that goes deeper than positioning</strong>
+                                        <span>Audits, strategy decks, archived samples, component systems, and process work when buyers want to inspect the thinking.</span>
+                                    </li>
+                                    <li>
+                                        <strong>Live ventures, not just slideware</strong>
+                                        <span>Tools, experiments, and founder-led offers already in the market instead of trapped in deck mode.</span>
+                                    </li>
+                                </ul>
+                            </article>
+                        <article class="hero-person-card hero-person-card--brand">
+                            <div class="hero-person-card__content">
+                                <p class="hero-person-card__eyebrow">Who leads the work</p>
+                                <h3>Pawel Tulin</h3>
+                                <p>Senior UX and AI strategist helping teams turn complex systems into work people can understand, adopt, and trust.</p>
+                                <div class="hero-person-card__tags">
+                                    <span>AI strategy</span>
+                                    <span>UX systems</span>
+                                    <span>Product direction</span>
+                                    <span>Founder support</span>
+                                </div>
+                                <a
+                                    class="hero-venture-link"
+                                    href="https://pacman.disruptiveexperience.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    data-analytics-name="Pacman hero"
+                                >
+                                    <span class="hero-venture-link__eyebrow">Now live</span>
+                                    <strong>Pacman</strong>
+                                    <span>Play the browser game venture and see one more thing already out in the market.</span>
+                                    <span class="hero-venture-link__cta">Open Pacman</span>
+                                </a>
+                            </div>
+                        </article>
+                    </aside>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="work-section" id="work">
-            <div class="wrap">
-                <p class="section-label reveal">Selected work</p>
-                <h2 class="section-title reveal">Projects across industries</h2>
-                <p class="section-desc reveal">Case studies available on request. We collaborate to solve digital problems—sustainably and enjoyably.</p>
-            </div>
-            <div class="work-scroll">
-                <div class="work-track" id="workTrack">
-                    <a href="#contact" class="work-card glass reveal" data-category="internal">
-                        <div class="work-card-bg" style="background-image:url(https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop)"></div>
-                        <span class="work-card-tag">Internal</span>
-                        <h3>Alert Management Dashboard</h3>
-                    </a>
-                    <a href="#contact" class="work-card glass reveal" data-category="business">
-                        <div class="work-card-bg" style="background-image:url(https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop)"></div>
-                        <span class="work-card-tag">Business</span>
-                        <h3>Marketing Site</h3>
-                    </a>
-                    <a href="#contact" class="work-card glass reveal" data-category="consumer">
-                        <div class="work-card-bg" style="background-image:url(https://images.unsplash.com/photo-1556740758-90de374c12ad?w=800&h=600&fit=crop)"></div>
-                        <span class="work-card-tag">Consumer</span>
-                        <h3>Shopping Cart Usability</h3>
-                    </a>
-                    <a href="#contact" class="work-card glass reveal" data-category="internal">
-                        <div class="work-card-bg" style="background-image:url(https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop)"></div>
-                        <span class="work-card-tag">Internal</span>
-                        <h3>Self-Service Application</h3>
-                    </a>
-                    <a href="#contact" class="work-card glass reveal" data-category="financial">
-                        <div class="work-card-bg" style="background-image:url(https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop)"></div>
-                        <span class="work-card-tag">Financial</span>
-                        <h3>Fund Screener</h3>
-                    </a>
-                    <a href="#contact" class="work-card glass reveal" data-category="business">
-                        <div class="work-card-bg" style="background-image:url(https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop)"></div>
-                        <span class="work-card-tag">Business</span>
-                        <h3>Executive iPad App</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="work-filters">
-                <button type="button" class="filter-pill active" data-filter="all">All</button>
-                <button type="button" class="filter-pill" data-filter="business">Business</button>
-                <button type="button" class="filter-pill" data-filter="consumer">Consumer</button>
-                <button type="button" class="filter-pill" data-filter="internal">Internal</button>
-                <button type="button" class="filter-pill" data-filter="financial">Financial</button>
-            </div>
-        </section>
-
-        <section class="testimonials-section">
-            <div class="wrap">
-                <p class="section-label reveal">Kind words</p>
-                <h2 class="section-title reveal">What clients say</h2>
-                <div class="testimonials-grid">
-                    <blockquote class="testimonial glass reveal" style="--delay: 0">
-                        <p>“Disruptive Experience transformed our product strategy. User engagement went up significantly—and the process was collaborative and clear.”</p>
-                        <footer>
-                            <span class="testimonial-name">— Client, Tech</span>
-                        </footer>
-                    </blockquote>
-                    <blockquote class="testimonial glass reveal" style="--delay: 1">
-                        <p>“They understood our vision and delivered a solution that felt on-brand and actually usable. Would work with them again.”</p>
-                        <footer>
-                            <span class="testimonial-name">— Product Lead, InnovateCo</span>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-section" id="about">
-            <div class="wrap about-wrap">
-                <div class="about-content">
-                    <p class="section-label reveal">The team</p>
-                    <h2 class="section-title reveal">Small team, big impact</h2>
-                    <p class="about-text reveal">We simplify information and design. We create digital solutions for clients, customers, and employees—and we teach UX in workshops and courses when it helps.</p>
-                    <p class="about-quote reveal">“It's more fun to be a pirate than to join the navy.” <cite>— Steve Jobs</cite></p>
-                </div>
-                <div class="team-grid">
-                    <div class="team-card glass reveal" style="--delay: 0">
-                        <div class="team-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" alt="Pawel Tulin" loading="lazy"></div>
-                        <h3>Pawel Tulin</h3>
-                        <p>Chief Disruptor</p>
+            <section class="marquee-strip" aria-label="Core themes">
+                <div class="marquee-track">
+                    <div class="marquee-group">
+                        <span>AI strategy</span>
+                        <span>UX research</span>
+                        <span>Product systems</span>
+                        <span>Digital ventures</span>
+                        <span>Archives & proof</span>
+                        <span>Human-centered design</span>
+                        <span>Life after AI</span>
                     </div>
-                    <div class="team-card glass reveal" style="--delay: 1">
-                        <div class="team-avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces" alt="Jenine Lurie" loading="lazy"></div>
-                        <h3>Jenine Lurie</h3>
-                        <p>Disruptor-in-Chief</p>
-                    </div>
-                    <div class="team-card glass reveal" style="--delay: 2">
-                        <div class="team-avatar"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop&crop=faces" alt="Moose" loading="lazy"></div>
-                        <h3>Moose</h3>
-                        <p>Chief Mouse Officer</p>
+                    <div class="marquee-group" aria-hidden="true">
+                        <span>AI strategy</span>
+                        <span>UX research</span>
+                        <span>Product systems</span>
+                        <span>Digital ventures</span>
+                        <span>Archives & proof</span>
+                        <span>Human-centered design</span>
+                        <span>Life after AI</span>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="manifesto-section">
-            <div class="wrap">
-                <p class="section-label reveal">Principles</p>
-                <h2 class="section-title reveal">What we believe</h2>
-                <div class="manifesto-grid">
-                    <div class="manifesto-item glass reveal" style="--delay: 0">
-                        <span class="manifesto-icon">Strategy</span>
-                        <h3>Design strategy</h3>
-                        <p>Stakeholder conversations, goals, and roadmaps. We storyboard and sketch before we build.</p>
+            <section class="section capabilities" id="capabilities">
+                <div class="container">
+                    <div class="section-head" data-reveal="up">
+                        <div class="section-head__main">
+                            <p class="eyebrow">Capabilities</p>
+                            <h2>Strategy, systems, and execution support for work that has to hold up in the real world.</h2>
+                        </div>
                     </div>
-                    <div class="manifesto-item glass reveal" style="--delay: 1">
-                        <span class="manifesto-icon">Mobile</span>
-                        <h3>Mobile first</h3>
-                        <p>Test core features fast on small screens, then scale. Limitless possibility, less waste.</p>
-                    </div>
-                    <div class="manifesto-item glass reveal" style="--delay: 2">
-                        <span class="manifesto-icon">Test</span>
-                        <h3>Usability testing</h3>
-                        <p>Do users get it? We align real experience with expectations and use feedback to iterate.</p>
-                    </div>
-                    <div class="manifesto-item glass reveal" style="--delay: 3">
-                        <span class="manifesto-icon">MVP</span>
-                        <h3>MVP & prototypes</h3>
-                        <p>Minimum viable product, test, iterate. Adaptable, nimble, and cost-efficient.</p>
-                    </div>
-                    <div class="manifesto-item glass reveal" style="--delay: 4">
-                        <span class="manifesto-icon">Edu</span>
-                        <h3>Training</h3>
-                        <p>UCD workshops and retreats. UX style guides and governance so your team can ship with confidence.</p>
+                    <div class="capability-grid">
+                        <article class="capability-card" data-reveal="up">
+                            <p class="capability-card__index">01</p>
+                            <h3>AI strategy and decision framing</h3>
+                            <p>Choose the right use cases, shape the operating model, and keep AI tied to practical service and product outcomes.</p>
+                        </article>
+                        <article class="capability-card" data-reveal="up">
+                            <p class="capability-card__index">02</p>
+                            <h3>UX systems and service design</h3>
+                            <p>Research, workflows, self-service experiences, and connective tissue that make complex offers feel coherent and trustworthy.</p>
+                        </article>
+                        <article class="capability-card" data-reveal="up">
+                            <p class="capability-card__index">03</p>
+                            <h3>Product direction and delivery</h3>
+                            <p>Roadmaps, prioritization, prototype thinking, and delivery judgment that help teams move without wasting cycles on the wrong bet.</p>
+                        </article>
+                        <article class="capability-card capability-card--accent" data-reveal="up">
+                            <p class="capability-card__index">04</p>
+                            <h3>Experiments, ventures, and growth loops</h3>
+                            <p>Sites, tools, founder offers, and partnership concepts built to create traction, open conversations, and show the work is already alive.</p>
+                        </article>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="contact-section" id="contact">
-            <div class="wrap contact-wrap">
-                <div class="contact-content">
-                    <p class="section-label reveal">Get in touch</p>
-                    <h2 class="section-title reveal">Start a conversation</h2>
-                    <p class="contact-desc reveal">We work client-side with stakeholders and can visit users in context. Send a link to your product for a free consultation, or tell us about your team for a custom workshop.</p>
-                    <div class="contact-info reveal">
-                        <a href="tel:9179162988">917-916-2988</a>
-                        <a href="mailto:info@DisruptiveExperience.com">info@DisruptiveExperience.com</a>
+            <section class="section destinations" id="destinations">
+                <div class="container">
+                    <div class="section-head" data-reveal="up">
+                        <div class="section-head__main">
+                            <p class="eyebrow">Destinations</p>
+                            <h2>A connected ecosystem where each destination earns its place.</h2>
+                        </div>
+                    </div>
+                    <div class="destination-grid">
+                        <a class="destination-card destination-card--wide destination-card--tools" href="https://aitools.disruptiveexperience.com" target="_blank" rel="noreferrer" data-reveal="up" data-analytics-name="AI Tools">
+                            <div class="destination-card__media">
+                                <img src="assets/images/aitools-preview.png" alt="AI Tools directory preview with live tool listings and daily updates">
+                            </div>
+                            <div class="destination-card__body">
+                                <span class="destination-card__label">AI tools</span>
+                                <h3>Useful AI utilities with a direct path to action.</h3>
+                                <p>Free tools, downloadable ZIPs, and working experiments generated from current AI topics so the directory feels alive, practical, and worth revisiting.</p>
+                                <div class="destination-card__proof">
+                                    <span>48 tools</span>
+                                    <span>Updated daily</span>
+                                    <span>ZIP downloads</span>
+                                    <span>Free utilities</span>
+                                </div>
+                                <span class="destination-card__cta">Open tools directory</span>
+                            </div>
+                        </a>
+                        <a class="destination-card destination-card--portfolio" href="https://pawel.disruptiveexperience.com" target="_blank" rel="noreferrer" data-reveal="up" data-analytics-name="Pawel">
+                            <div class="destination-card__media">
+                                <img src="assets/images/ibm-preview.jpg" alt="IBM project interface preview">
+                            </div>
+                            <div class="destination-card__body">
+                                <span class="destination-card__label">Portfolio</span>
+                                <h3>Pawel</h3>
+                                <p>Named case studies across enterprise AI, service design, and product direction, including work for IBM, Fiserv, ADP, Pearson, and GLG.</p>
+                                <div class="destination-card__proof">
+                                    <span>IBM</span>
+                                    <span>Fiserv</span>
+                                    <span>ADP</span>
+                                    <span>Pearson</span>
+                                </div>
+                                <span class="destination-card__cta">View portfolio</span>
+                            </div>
+                        </a>
+                        <a class="destination-card destination-card--archive" href="https://archives.disruptiveexperience.com" target="_blank" rel="noreferrer" data-reveal="up" data-analytics-name="Archives">
+                            <div class="destination-card__media">
+                                <img src="assets/images/archive-preview.jpg" alt="Style system archive preview">
+                            </div>
+                            <div class="destination-card__body">
+                                <span class="destination-card__label">Archive</span>
+                                <h3>Archives</h3>
+                                <p>Archived strategy decks, UX audits, component systems, and historic samples for buyers who want to see the actual work behind the polished story.</p>
+                                <div class="destination-card__proof">
+                                    <span>IBM Bluedot</span>
+                                    <span>Lord Abbett</span>
+                                    <span>TD audit</span>
+                                    <span>PDF evidence</span>
+                                </div>
+                                <span class="destination-card__cta">Browse archive</span>
+                            </div>
+                        </a>
+                        <a class="destination-card destination-card--creative" href="https://pavotu.disruptiveexperience.com" target="_blank" rel="noreferrer" data-reveal="up" data-analytics-name="Pavotu">
+                            <div class="destination-card__media">
+                                <img src="assets/images/pavotu-preview.jpeg" alt="Exploratory interface and architecture work preview">
+                            </div>
+                            <div class="destination-card__body">
+                                <span class="destination-card__label">Creative work</span>
+                                <h3>Pavotu</h3>
+                                <p>Additional work samples, interface experiments, and looser visual systems that show the practice beyond the formal consulting frame.</p>
+                                <div class="destination-card__proof">
+                                    <span>Interaction systems</span>
+                                    <span>Concept prototypes</span>
+                                    <span>Visual experiments</span>
+                                </div>
+                                <span class="destination-card__cta">Explore Pavotu</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <form class="contact-form glass reveal" id="contactForm" novalidate>
-                    <div class="form-row">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required autocomplete="name">
-                        <span class="form-error" id="nameError"></span>
-                    </div>
-                    <div class="form-row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required autocomplete="email">
-                        <span class="form-error" id="emailError"></span>
-                    </div>
-                    <div class="form-row">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                        <span class="form-error" id="messageError"></span>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-submit">Send message</button>
-                    <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
-                </form>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <footer class="footer">
-        <div class="wrap footer-inner">
-            <div class="footer-brand">
-                <span class="logo-main">Disruptive</span><span class="logo-plus">+</span> <span class="logo-sub">Experience</span>
+            <section class="section ventures" id="ventures">
+                <div class="container">
+                    <div class="section-head" data-reveal="up">
+                        <div class="section-head__main">
+                            <p class="eyebrow">Featured venture</p>
+                            <h2>Taste of Gascony shows what happens when a venture has real character, not just positioning.</h2>
+                        </div>
+                    </div>
+                    <div class="ventures-grid">
+                        <article class="venture-panel venture-panel--intro" data-reveal="up">
+                            <p class="venture-card__label">Taste of Gascony</p>
+                            <h3>Immersive cultural experiences in the heart of Gascony.</h3>
+                            <p>Curated itineraries, market-led culinary experiences, village stays, wine and Armagnac discovery, and slow travel shaped by Jenine Lurie's relationships across the Gers.</p>
+                            <div class="venture-stats">
+                                <div>
+                                    <strong>6</strong>
+                                    <span>tour themes already framed around food, villages, markets, wine, and place</span>
+                                </div>
+                                <div>
+                                    <strong>3</strong>
+                                    <span>guest stories already in the working content set</span>
+                                </div>
+                                <div>
+                                    <strong>Bassoues-based</strong>
+                                    <span>small-group positioning grounded in local relationships, not generic tourism copy</span>
+                                </div>
+                            </div>
+                            <a class="button button--primary" href="https://www.tasteofgascony.com/" target="_blank" rel="noreferrer" data-analytics-name="Taste of Gascony">Visit Taste of Gascony</a>
+                        </article>
+
+                        <article class="venture-panel venture-panel--gallery" data-reveal="up">
+                            <div class="venture-carousel" id="ventureCarousel" aria-label="Taste of Gascony image carousel">
+                                <div class="venture-carousel__track">
+                                    <figure class="venture-carousel__slide is-active">
+                                        <img src="assets/images/gascony-hero.jpg" alt="Village view across the water in Gascony">
+                                        <figcaption>
+                                            <span class="venture-carousel__eyebrow">Place</span>
+                                            <strong>Bassoues and the wider Gers</strong>
+                                            <span>Village landscapes, open sky, and the slower rhythm that shapes the whole offer.</span>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="venture-carousel__slide">
+                                        <img src="assets/images/gascony-armagnac.jpg" alt="Electric bikes overlooking vineyard country in Gascony">
+                                        <figcaption>
+                                            <span class="venture-carousel__eyebrow">Movement</span>
+                                            <strong>Wine country by bike</strong>
+                                            <span>Routes, vineyards, and small-group exploration that feel grounded instead of packaged.</span>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="venture-carousel__slide">
+                                        <img src="assets/images/gascony-culinary.jpg" alt="Goats and farm path during a rural Gascony visit">
+                                        <figcaption>
+                                            <span class="venture-carousel__eyebrow">Texture</span>
+                                            <strong>Farm visits and working landscapes</strong>
+                                            <span>Food culture here starts with the producers, places, and daily life around them.</span>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="venture-carousel__slide">
+                                        <img src="assets/images/gascony-partner.jpg" alt="Local host pouring wine in a Gascony cellar">
+                                        <figcaption>
+                                            <span class="venture-carousel__eyebrow">People</span>
+                                            <strong>Partners who make the experience real</strong>
+                                            <span>Winemakers, artisans, and hosts are part of the product, not background decoration.</span>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="venture-carousel__slide">
+                                        <img src="assets/images/jenine-lurie.jpg" alt="Jenine Lurie standing in a historic stone doorway in Gascony">
+                                        <figcaption>
+                                            <span class="venture-carousel__eyebrow">Founder</span>
+                                            <strong>Jenine Lurie on the ground</strong>
+                                            <span>A founder-led offer with a real guide, real relationships, and a clear point of view.</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="venture-carousel__dots" aria-label="Carousel navigation">
+                                    <button class="venture-carousel__dot is-active" type="button" aria-label="Show slide 1"></button>
+                                    <button class="venture-carousel__dot" type="button" aria-label="Show slide 2"></button>
+                                    <button class="venture-carousel__dot" type="button" aria-label="Show slide 3"></button>
+                                    <button class="venture-carousel__dot" type="button" aria-label="Show slide 4"></button>
+                                    <button class="venture-carousel__dot" type="button" aria-label="Show slide 5"></button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="venture-panel venture-panel--partner" data-reveal="up">
+                            <img class="venture-partner__image" src="assets/images/gascony-partner.jpg" alt="Local partner and artisan scene in Gascony">
+                            <div class="venture-partner__body">
+                                <p class="venture-card__label">Why it feels real</p>
+                                <h3>Local partners are part of the product.</h3>
+                                <p>Farmers, vignerons, bakers, and artisans are not background decoration here. They are the reason the experience feels genuine.</p>
+                            </div>
+                        </article>
+
+                        <article class="venture-panel venture-panel--testimonial" data-reveal="up">
+                            <p class="venture-card__label">Guest takeaway</p>
+                            <blockquote>
+                                “Jenine's knowledge of the region, its people, and its food is extraordinary. We left feeling as though we had genuinely lived here for a week, not just visited.”
+                            </blockquote>
+                            <p class="venture-panel__attribution">Margaret &amp; David H. / San Francisco, CA</p>
+                        </article>
+
+                        <article class="venture-panel venture-panel--founder" data-reveal="up">
+                            <img class="venture-founder__image" src="assets/images/jenine-lurie.jpg" alt="Jenine Lurie, founder and host of Taste of Gascony">
+                            <div class="venture-founder__body">
+                                <p class="venture-card__label">Founder spotlight</p>
+                                <h3>Jenine Lurie</h3>
+                                <p>Founder and host behind Taste of Gascony's food, wine, and slow-travel experiences across southwest France.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section proof" id="proof">
+                <div class="container">
+                    <div class="section-head" data-reveal="up">
+                        <div class="section-head__main">
+                            <p class="eyebrow">Proof</p>
+                            <h2>Real project signal, not generic capability claims.</h2>
+                        </div>
+                    </div>
+                    <div class="proof-grid">
+                        <article class="proof-card proof-card--feature" data-reveal="up">
+                            <p class="proof-card__eyebrow">Global systems</p>
+                            <h3>Work shaped for real complexity, not greenfield fantasies.</h3>
+                            <p>UNICEF reporting work connected 200+ data sources across 150+ countries, while IBM research and support work set standards for cognitive products with large, messy constraints.</p>
+                        </article>
+                        <article class="proof-card proof-card--adp" data-reveal="up">
+                            <p class="proof-card__stat">80-90%</p>
+                            <h3>Support conversations automated</h3>
+                            <p>ADP customer support flows were redesigned around multilingual conversational AI and heavy service complexity.</p>
+                        </article>
+                        <article class="proof-card proof-card--fiserv-time" data-reveal="up">
+                            <p class="proof-card__stat">Days -> hours</p>
+                            <h3>Reporting cycles compressed</h3>
+                            <p>Fiserv CFO office work focused on AI-driven reporting automation, workflow tooling, dashboards, and decision support.</p>
+                        </article>
+                        <article class="proof-card proof-card--fiserv-scale" data-reveal="up">
+                            <p class="proof-card__stat">30+</p>
+                            <h3>Product lines brought into one system</h3>
+                            <p>DesignOps standards and workflow patterns helped large Fiserv portfolios move more consistently.</p>
+                        </article>
+                        <article class="proof-card proof-card--ibm" data-reveal="up">
+                            <p class="proof-card__stat">200+</p>
+                            <h3>Client interviews synthesized</h3>
+                            <p>IBM Watson and Bluedot work combined research rigor, rapid prototyping, and support tooling for cognitive products.</p>
+                        </article>
+                        <article class="proof-card proof-card--intel" data-reveal="up">
+                            <p class="proof-card__stat">50+</p>
+                            <h3>Personas structured for findability</h3>
+                            <p>Intel information architecture work handled audience complexity at scale instead of flattening it into generic content buckets.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section manifesto" id="manifesto">
+                <div class="container">
+                    <div class="section-head" data-reveal="up">
+                        <div class="section-head__main">
+                            <p class="eyebrow">Point of view</p>
+                            <h2>Life After AI</h2>
+                        </div>
+                    </div>
+                    <div class="manifesto-grid">
+                        <article class="manifesto-card" data-reveal="up">
+                            <p class="manifesto-card__eyebrow">After the prompt</p>
+                            <h3>Outputs need reviewable systems.</h3>
+                            <p>Strong AI products make it easy to inspect, recover, refine, and learn from imperfect output.</p>
+                        </article>
+                        <article class="manifesto-card" data-reveal="up">
+                            <p class="manifesto-card__eyebrow">After the prototype</p>
+                            <h3>Good demos are not enough.</h3>
+                            <p>What matters is whether ownership, workflow, and incentives can support the thing once it ships.</p>
+                        </article>
+                        <article class="manifesto-card" data-reveal="up">
+                            <p class="manifesto-card__eyebrow">After the hype</p>
+                            <h3>Judgment becomes the differentiator.</h3>
+                            <p>The durable edge is clearer standards, better service quality, and more credible product decisions.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contact" id="contact">
+                <div class="container contact__grid">
+                    <div class="contact__intro" data-reveal="up">
+                        <div class="section-head__main">
+                            <p class="eyebrow">Contact</p>
+                            <h2>Start with the right conversation.</h2>
+                        </div>
+                        <p>
+                            Whether the topic is AI strategy, product work, partnerships, archives, speaking, or Taste of Gascony,
+                            this form helps route the inquiry into the right next step quickly.
+                        </p>
+                        <div class="contact__channels">
+                            <a href="mailto:contact@disruptiveexperience.com" data-analytics-name="Contact email">contact@disruptiveexperience.com</a>
+                        </div>
+                        <div class="contact__meta">
+                            <article class="contact-meta-card">
+                                <span class="contact-meta-card__label">Best for</span>
+                                <p>Consulting, product direction, partnership discussions, archives, speaking, and travel inquiries.</p>
+                            </article>
+                            <article class="contact-meta-card">
+                                <span class="contact-meta-card__label">Typical flow</span>
+                                <p>A short reply first, then a focused follow-up conversation if there is a clear fit.</p>
+                            </article>
+                            <article class="contact-meta-card">
+                                <span class="contact-meta-card__label">Helpful context</span>
+                                <p>Tell us what you are building, where the decision is stuck, and what kind of help you want first.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" novalidate data-reveal="up">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input id="name" name="name" type="text" required autocomplete="name">
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input id="email" name="email" type="email" required autocomplete="email">
+                                <span class="form-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input id="company" name="company" type="text" autocomplete="organization">
+                                <span class="form-error" aria-hidden="true"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">What are you interested in? *</label>
+                                <select id="interest" name="interest" required>
+                                    <option value="">Choose one</option>
+                                    <option value="AI / product strategy">AI / product strategy</option>
+                                    <option value="UX / research / consulting">UX / research / consulting</option>
+                                    <option value="AI tools / partnership inquiry">AI tools / partnership inquiry</option>
+                                    <option value="Archives / samples / speaking">Archives / samples / speaking</option>
+                                    <option value="Taste of Gascony / travel inquiry">Taste of Gascony / travel inquiry</option>
+                                </select>
+                                <span class="form-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">What should we know? *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us what you are building, what feels unclear, or what kind of conversation you want to have."></textarea>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <input type="hidden" name="source" value="disruptiveexperience.com">
+
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Send inquiry</span>
+                            <span class="button-loader" aria-hidden="true"></span>
+                        </button>
+                        <div class="form-success" id="formSuccess" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container site-footer__inner">
+                <div>
+                    <p class="site-footer__brand">Disruptive Experience</p>
+                    <p class="site-footer__note">AI strategy, product direction, and ventures shaped for the real world, not just the pitch.</p>
+                </div>
+                <div class="site-footer__links">
+                    <a href="https://aitools.disruptiveexperience.com" target="_blank" rel="noreferrer" data-analytics-name="AI Tools footer">AI Tools</a>
+                    <a href="https://github.com/ptulin" target="_blank" rel="noreferrer" data-analytics-name="GitHub footer">GitHub</a>
+                    <a href="https://pawel.disruptiveexperience.com" target="_blank" rel="noreferrer" data-analytics-name="Pawel footer">Pawel</a>
+                    <a href="https://archives.disruptiveexperience.com" target="_blank" rel="noreferrer" data-analytics-name="Archives footer">Archives</a>
+                    <a href="https://pavotu.disruptiveexperience.com" target="_blank" rel="noreferrer" data-analytics-name="Pavotu footer">Pavotu</a>
+                    <a href="https://www.tasteofgascony.com/" target="_blank" rel="noreferrer" data-analytics-name="Taste of Gascony footer">Taste of Gascony</a>
+                </div>
             </div>
-            <p class="footer-copy">© 2026 Disruptive Experience</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

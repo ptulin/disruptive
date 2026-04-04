@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Boss Dashboard | Disruptive Experience</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23df6d2a'/%3E%3Cpath d='M18 44V20h15.5c8.8 0 14.5 4.8 14.5 12s-5.7 12-14.5 12H18Zm9-7h6.1c4.4 0 7.2-1.8 7.2-5s-2.8-5-7.2-5H27v10Z' fill='white'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/boss.css">
+</head>
+<body class="boss-body">
+    <main class="boss-shell">
+        <section class="boss-login" id="bossLogin">
+            <div class="boss-login__card">
+                <p class="boss-eyebrow">Private analytics</p>
+                <h1>Boss Dashboard</h1>
+                <p>A simpler read on traffic, interest, and contact intent across disruptiveexperience.com.</p>
+                <form id="bossLoginForm" class="boss-login__form">
+                    <input class="boss-login__username" type="text" name="username" autocomplete="username" tabindex="-1" aria-hidden="true">
+                    <label for="bossPassword">Password</label>
+                    <input id="bossPassword" name="password" type="password" autocomplete="current-password" required>
+                    <button type="submit">Unlock dashboard</button>
+                    <p class="boss-login__error" id="bossLoginError" role="alert"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="boss-app is-hidden" id="bossApp">
+            <header class="boss-header">
+                <div>
+                    <p class="boss-eyebrow">Disruptive Experience</p>
+                    <h1>Boss Dashboard</h1>
+                    <p class="boss-subtitle">Traffic, interest, and contact signal without the PostHog maze.</p>
+                </div>
+                <div class="boss-header__actions">
+                    <button type="button" class="boss-logout" id="bossLogout">Log out</button>
+                    <div class="range-switch" id="rangeSwitch">
+                        <button type="button" data-range="7d">7D</button>
+                        <button type="button" data-range="30d" class="is-active">30D</button>
+                        <button type="button" data-range="90d">90D</button>
+                    </div>
+                </div>
+            </header>
+
+            <section class="boss-summary" id="bossSummary"></section>
+
+            <section class="boss-grid boss-grid--hero">
+                <article class="boss-panel boss-panel--chart">
+                    <div class="boss-panel__head">
+                        <div>
+                            <p class="boss-panel__eyebrow">Over time</p>
+                            <h2>Traffic and intent</h2>
+                        </div>
+                        <p class="boss-panel__hint">Click a point to drill into that day.</p>
+                    </div>
+                    <canvas id="bossTimelineChart" height="140"></canvas>
+                </article>
+
+                <article class="boss-panel">
+                    <div class="boss-panel__head">
+                        <div>
+                            <p class="boss-panel__eyebrow">Traffic mix</p>
+                            <h2>Where people come from</h2>
+                        </div>
+                    </div>
+                    <div class="boss-list" id="bossReferrers"></div>
+                </article>
+            </section>
+
+            <section class="boss-grid boss-grid--stats">
+                <article class="boss-panel">
+                    <div class="boss-panel__head">
+                        <div>
+                            <p class="boss-panel__eyebrow">Audience</p>
+                            <h2>Countries</h2>
+                        </div>
+                    </div>
+                    <div class="boss-list" id="bossCountries"></div>
+                </article>
+                <article class="boss-panel">
+                    <div class="boss-panel__head">
+                        <div>
+                            <p class="boss-panel__eyebrow">Clicks</p>
+                            <h2>What people open</h2>
+                        </div>
+                    </div>
+                    <div class="boss-list" id="bossTargets"></div>
+                </article>
+                <article class="boss-panel">
+                    <div class="boss-panel__head">
+                        <div>
+                            <p class="boss-panel__eyebrow">Contact intent</p>
+                            <h2>Interests selected</h2>
+                        </div>
+                    </div>
+                    <div class="boss-list" id="bossInterests"></div>
+                </article>
+                <article class="boss-panel">
+                    <div class="boss-panel__head">
+                        <div>
+                            <p class="boss-panel__eyebrow">Attention</p>
+                            <h2>Sections reached</h2>
+                        </div>
+                    </div>
+                    <div class="boss-list" id="bossSections"></div>
+                </article>
+            </section>
+
+            <section class="boss-panel boss-panel--details">
+                <div class="boss-panel__head boss-panel__head--stack">
+                    <div>
+                        <p class="boss-panel__eyebrow">Drilldown</p>
+                        <h2 id="bossDetailsTitle">Recent activity</h2>
+                        <p class="boss-panel__hint" id="bossDetailsHint">Showing the latest meaningful events for the selected window.</p>
+                    </div>
+                    <div class="focus-switch" id="focusSwitch">
+                        <button type="button" data-focus="all" class="is-active">All</button>
+                        <button type="button" data-focus="traffic">Traffic</button>
+                        <button type="button" data-focus="cta">CTAs</button>
+                        <button type="button" data-focus="destination">Destinations</button>
+                        <button type="button" data-focus="venture">Venture</button>
+                        <button type="button" data-focus="contact">Contact</button>
+                        <button type="button" data-focus="outbound">Outbound</button>
+                    </div>
+                </div>
+                <div class="boss-table-wrap">
+                    <table class="boss-table">
+                        <thead>
+                            <tr>
+                                <th>When</th>
+                                <th>Event</th>
+                                <th>Target</th>
+                                <th>Section</th>
+                                <th>Interest</th>
+                                <th>Referrer</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bossDetails"></tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script src="/boss.js"></script>
+</body>
+</html>

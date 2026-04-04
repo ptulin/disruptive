@@ -1,89 +1,80 @@
-# Disruptive Experience - Modern Redesign
+# Disruptive Experience
 
-A modern, responsive redesign of the Disruptive Experience website.
+Production code for:
+- `https://disruptiveexperience.com`
+- `https://boss.disruptiveexperience.com`
 
-## 🌐 Live Demo
+## Active Surface
 
-The website is available at: **http://localhost:8080** (when server is running)
+The live project is intentionally small now.
 
-## 🚀 Quick Start
+- `index.html`
+  Public homepage
+- `styles.css`
+  Homepage styles
+- `script.js`
+  Homepage interactions, validation, and analytics events
+- `boss.html`
+  Private analytics dashboard shell
+- `boss.css`
+  Dashboard styles
+- `boss.js`
+  Dashboard client logic and charts
+- `api/contact.js`
+  Contact form handler
+- `api/boss-auth.js`
+  Dashboard password login
+- `api/boss-session.js`
+  Dashboard session check
+- `api/boss-logout.js`
+  Dashboard logout endpoint
+- `api/boss-stats.js`
+  Dashboard data endpoint backed by PostHog
+- `api/_boss.js`
+  Shared dashboard helpers
+- `assets/images/`
+  Local images used by the homepage
+- `vercel.json`
+  Host routing and security headers
+- `scripts/check.mjs`
+  Lightweight project verification
 
-### Start Local Server
+Everything else that used to clutter the root has been moved to [`_archive`](/Users/patu/Documents/CursorProjects/DE.Main/_archive).
 
-**Option 1: Python**
+## Local Development
+
 ```bash
-python3 server.py
+npm run dev
 ```
 
-**Option 2: Ruby**
+Open:
+- `http://localhost:8080`
+- `http://localhost:8080/boss`
+
+## Checks
+
 ```bash
-ruby -run -e httpd . -p 8080
+npm run check
 ```
 
-**Option 3: Double-click**
-- Double-click `run-server.command` in Finder
+This validates:
+- required project files exist
+- key JS files parse cleanly
+- `vercel.json` is valid JSON
 
-Then open **http://localhost:8080** in your browser.
+## Environment Variables
 
-## 📦 Deploy to GitHub
+Production uses Vercel environment variables for:
+- `RESEND_API_KEY`
+- `CONTACT_TO_EMAIL`
+- `TASTE_OF_GASCONY_TO_EMAIL`
+- `CONTACT_FROM_EMAIL`
+- `POSTHOG_PERSONAL_API_KEY`
+- `POSTHOG_PROJECT_ID`
+- `BOSS_DASHBOARD_PASSWORD`
+- `BOSS_SESSION_SECRET`
 
-Run the deployment script:
-```bash
-./deploy-to-github.sh
-```
+## Notes
 
-Or use Python script:
-```bash
-python3 create_github_repo.py
-```
-
-## ✨ Features
-
-- ✅ Modern, clean design with smooth animations
-- ✅ Fully responsive (mobile, tablet, desktop)
-- ✅ Interactive work portfolio filter
-- ✅ Smooth scrolling navigation
-- ✅ Contact form
-- ✅ Performance optimized
-- ✅ SEO friendly
-
-## 🛠️ Technologies
-
-- HTML5
-- CSS3 (CSS Variables, Flexbox, Grid)
-- Vanilla JavaScript (ES6+)
-- Google Fonts (Inter, Space Grotesk)
-
-## 📁 Project Structure
-
-```
-.
-├── index.html              # Main HTML file
-├── styles.css              # All styles and responsive design
-├── script.js               # JavaScript functionality
-├── server.py               # Python HTTP server
-├── simple-server.js        # Node.js HTTP server (alternative)
-├── deploy-to-github.sh     # GitHub deployment script
-├── create_github_repo.py   # Python deployment script
-├── run-server.command      # macOS launcher
-└── README.md               # This file
-```
-
-## 🌍 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## 📝 License
-
-MIT
-
-## 👤 Author
-
-Disruptive Experience Team
-
----
-
-**Note:** This is a modern redesign of the original Disruptive Experience website, preserving all original content while updating the design and user experience.
+- `boss.disruptiveexperience.com` redirects into the dashboard route and serves the private analytics surface.
+- The dashboard is intentionally a lightweight custom layer over PostHog, optimized for readability rather than raw analytics complexity.
